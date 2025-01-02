@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid;
+    margin: 60px;
+}
+
+header {
+    height: 40vh;
+}
+
+nav {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ .logo {
+    font-family: "Meow Script", serif;
+    font-weight: 400;
+}
+
+
+nav div ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav div ul a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.details {
+    display: flex;
+    margin-top: 3rem;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.project {
+    width: 20%;
+    justify-content: center;
+    border-right: 2px solid;
+}
+
+.project h3 {
+    padding: 20px;
+}
+
+.project p {
+    border-bottom: 2px solid;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.Work {
+    width: 60%;
+    justify-content: center;
+    border-right: 2px solid;
+}
+
+.Work h3 {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+div .part1 {
+    border-bottom: 2px solid;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+div .part2 {
+    padding: 10px;
+    padding-left: 40px;
+}
+
+div h5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div .part1 a {
+    text-decoration: none;
+}
+
+div .part2 a {
+    text-decoration: none;
+}
+
+.education {
+    width: 30%;
+    justify-content: center;
+
+}
+.education h3 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.education p {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.education ul li {
+    padding: 10px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.education ul li::before {
+    content: "- ";
+}
+
+.review {
+    padding: 1rem 1.5rem;
+}
+
+.reviews h3 {
+    padding-left: 40px;
+    margin: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.reviews-container div {
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 1rem;
+    margin: 5px;
+}
+
+div h6 {
+    padding-top: 10px;
+}
+
+footer {
+    padding: 7rem 1rem 3rem 1rem;
+    text-align: center;
+}
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            <h1>AB Codes</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li> /
+                <li><a href="#">Projects</a></li> /
+                <li><a href="#">Articles</a></li> /
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h2>Frontend Developer</h2>
+    </main>
+    </header>
+
+    <section class="details">
+        <div class="project">
+            <h3>Projects</h3>
+            <p>HTML only Portfolio</p>
+            <p>Calculator</p>
+            <p>Quiz App</p>
+            <p>Countdown Timer</p>
+            <p style="border-bottom: none;">Product Upcoming Page</p>
+        </div>
+
+        <div class="Work">
+            <h3>Work Experience</h3>
+            <div class="part1">
+                <h5>roadmap.sh</h5>
+                <p>Solved all frontend projects</p>
+                <P><a href="#">Visit my profile</a></P>
+            </div>
+            <div class="part2">
+                <h5>CodePen.io</h5>
+                <p>Developed various projects</p>
+                <P><a href="#">Visit my profile</a></P>
+            </div>
+        </div>
+
+        <div class="education">
+            <h3>Education</h3>
+            <p>Graduated with 4.0 CGPA
+                from University of Ibadan,
+                Computer Science.
+            </p>
+            <p>Courses I took:</p>
+            <ul>
+                <li>Web Development Course</li>
+                <li>Frontend Basics</li>
+                <li>CSS Mastery</li>
+                <li>Advance HTML</li>
+                <li>Simple Guide on Web Development</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h3>Reviews from my teachers</h3>
+        <div class="reviews-container">
+            <div>
+                <p>Adams is a brilliant student. He is fully committted to every project given
+                    and pays rapt attention in classes.
+                </p>
+                <h6>Mr Najeeb</h6>
+            </div>
+
+            <div>
+                <p>Adams CSS is top-notch. He has a way of making his designs unique and very interactive</p>
+                <h6>Mr Najeeb</h6>
+            </div>
+
+            <div>
+                <p>Adams has a great communication style. Every of his projects communicates a
+                    unique message.
+                </p>
+                <h6>Mr Najeeb</h6>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <P>&copy; all rights reserved 2024</P>
+    </footer>
+</body>
+</html>
